@@ -3,7 +3,7 @@ using namespace std;
 
 namespace coup{
 
-    Assassin::Assassin(Game g, string name):Player(g,name){
+    Assassin::Assassin(Game& g, string name):Player(g,name){
 
     }
 

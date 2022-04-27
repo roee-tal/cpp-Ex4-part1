@@ -3,25 +3,30 @@ using namespace std;
 
 namespace coup{
 
-    Player::Player(Game g, string name):g(g),name(name){
-
+    Player::Player(Game& g, string name):g(&g),name(name){
+        this->g->playing.push_back(name);
+        // cout << this->g->playing.size();
+        // cout << "\n";
+        this->coin = 0;
     }
 
     void Player:: income(){
-        cout << "income";
+        this->coin++;
     }  
 
     void Player:: foreign_aid(){
-        cout << "income";
+        this->coin = this->coin+2;
     }   
     
     void Player:: coup(Player player){
         cout << "aid";
+        cout << "\n";
     }
     int Player:: coins(){
-        return 0;
+        return this->coin;
     }
     void Player:: role(){
         cout << "role";
+        cout << "\n";
     }
 }

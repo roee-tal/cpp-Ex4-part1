@@ -7,8 +7,9 @@ namespace coup{
 
     class Game{
 
-        std::vector<std::string> playing;
+        
         public:
+        std::vector<std::string> playing;
             Game();
             std::vector<std::string> players();
             std::string turn();

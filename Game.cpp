@@ -4,7 +4,7 @@ using namespace std;
 namespace coup{
 
     Game::Game(){
-        this->playing.push_back("roee");
+        int i = 1;
     }
 
     vector<string> Game:: players(){

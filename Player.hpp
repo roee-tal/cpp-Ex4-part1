@@ -12,11 +12,14 @@
 namespace coup{
 
     class Player{
-        Game g;
-        std::string name;
+
 
         public:
-            Player(Game g, std::string name);
+            Game* g;
+            std::string name;
+            int coin;
+            std::string p_role;
+            Player(Game& g, std::string name);
             void income();
             void foreign_aid();
             void coup(Player p);
